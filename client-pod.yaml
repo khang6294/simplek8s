@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: khang6294/fullstack-docker-client
+      image: khang6294/fullstack-docker-worker
       ports:
         - containerPort: 3000
