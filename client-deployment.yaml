@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: client-deployment
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       component: frontend
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: khang6294/fullstack-docker-client
+          image: khang6294/fullstack-docker-worker
           ports:
-            - containerPort: 3000
+            - containerPort: 9999
